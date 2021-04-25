@@ -12,7 +12,7 @@ body {
   height: 650px;
   margin: 30px auto;
   background-color: #EEE;
-  padding: 40px;
+  padding: 55px 40px;
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   column-gap: 20px;
@@ -72,6 +72,35 @@ hr {
   align-items: center;
 }
 
+.container .two {
+  position: relative;
+}
 
+.container .two::before {
+  content: "Save 50%";
+  position: absolute;
+  font-size: 14px;
+  background-color: #5959f8;
+  color: white;
+  height: 30px;
+  width: 90px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin-top: -40px;
+}
+
+.container .two::after {
+  content: "";
+  position: absolute;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #EEE transparent transparent;
+  top:0;
+  right: 0px;
+  margin-top: -40px;
+}
 
 
